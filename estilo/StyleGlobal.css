@@ -130,7 +130,6 @@ section#sobre  h1{
   text-align: center;
 }
 
-/* Título principal */
 #sobre-mim h2 {
   font-size: 2em;
   font-family: "Raleway", sans-serif;
@@ -199,6 +198,7 @@ section#sobre a:hover {
 
 
 /* area dos projetos principais*/
+
 section#principais-projetos {
     padding: 50px 0;
     background-color: aliceblue;
@@ -239,6 +239,39 @@ div.Projetos-principais{
   height: 390px;
   background-color: #B1B2B5;
  }
+
+ .slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+
+ @keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 
 .tecnologias-usadas {
     background-color: #B1B2B5;
