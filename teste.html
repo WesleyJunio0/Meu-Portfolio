@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação de Linha ao Rolar</title>
+  <style>
+    body {
+      height: 200vh; /* Altura grande para permitir rolagem */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .secao {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .texto {
+      position: relative;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .texto::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #007bff;
+      transition: width 0.5s ease-in-out;
+    }
+
+    .texto .animar::after {
+      width: 100px;
+    }
+
+    .triangulo {
+  width: 10px;
+  height: 10px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid blue;
+}
+  </style>
+</head>
+<body>
+  <div style="height: 100vh;"> <div class="triangulo"></div></div> <!-- Espaço para rolagem -->
+  <section class="secao">
+    <h1 class="texto">Texto com Linha Animada</h1>
+  </section>
+
+
+
+
+  <script>
+    const texto = document.querySelector('.texto');
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animar');
+          observer.unobserve(entry.target); // Para a animação rodar só uma vez
+        }
+      });
+    }, { threshold: 1}); // Anima quando 50% do elemento está visível
+
+    observer.observe(texto);
+  </script>
+</body>
+</html>
