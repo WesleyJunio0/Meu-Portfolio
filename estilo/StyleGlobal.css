@@ -1,7 +1,233 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+:root {
+  --font-f1: "Poppins", sans-serif;
+  --font-f2: "Lobster", sans-serif;
+}
+
+body{
+   background: linear-gradient(to bottom,rgb(159, 170, 255) 0%, rgb(174, 183, 254) 60%);
+   width: 100vw;
+}
+
+
+
+
+  /* cabeçalho */
+ header{
+  padding: 7px;
+  display: flex;
+  flex-direction: row;   
+  align-items: center;
+ 
+
+ }
+
+ header > p {
+  font-family: var(--font-f1);
+  font-size: 0.9em;
+  font-weight: bold;
+  color: aliceblue;
+ }
+ 
+
+ #icone {
+    width: 60px;
+    height: 60px;
+    background-image: url(../imagens/imagen-mobile.png);
+    background-position: center left;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+ nav {
+   align-self: flex-start;
+   margin-left: auto;
+
+}
+
+/* area sobre*/
+
+
+section#sobre {
+    padding: 30px 0 250px;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    color:rgb(240, 248, 255);
+  
+  }
+
+
+section#sobre > h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.9em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+
+section#sobre > h2 {
+  font-size: 1.3em;
+  margin: 50px 0 20px;
+  text-align: center;
+}
+
+
+section#sobre > button {
+  padding: 10px 20px;
+  border: solid 2px;
+  border-color: rgb(159, 170, 255);
+  border-radius: 10px;
+  background-color: aliceblue;
+  color:rgb(159, 170, 255)  ;
+  font-size: 1.2em;
+  font-weight: bolder;
+  box-shadow: rgba(0, 0, 0, 0.11) 2px 3px 3px 0px;
+}
+
+section#sobre > p {
+   margin: 20px 0;
+   font-family: var(--font-f1);
+   text-align: justify;
+   color: rgba(240, 248, 255, 0.842);
+   
+  }
+
+section#sobre > h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+section#sobre > div#tecnologias {
+    width: 90%;
+    height: 40px;
+    background-color: #B1B2B5;
+  }
+       
+  
+/* area dos projetos principais*/
+section#principais-projetos {
+    padding: 50px 0;
+    background-color: aliceblue;
+    border-radius: 10px 10px 0;
+    
+   
+} 
+
+section#principais-projetos > h2{
+    text-align: center;
+    margin-bottom: 90px;
+  }
+        
+div.Projetos-principais{
+    height: 400px;
+    padding: 20px 0;
+    display: flex;
+    margin: 40px 0;
+}
+
+.direito{
+  flex-direction: row;
+}
+
+ .esquerdo {
+    flex-direction: row-reverse;
+
+  }
+
+.lado-direito, .lado-esquerdo{
+    width: 140px;
+  }
+
+        
+.image{
+  width: 200px;
+  height: 390px;
+  background-color: #B1B2B5;
+ }
+
+.tecnologias-usadas {
+    background-color: #B1B2B5;
+    width: 90%;
+    height: 30px;
+ }
+
+
+  /* outros projetos*/
+
+#outros-projetos{
+    padding: 40px 10px;
+    
+  }
+
+        
+ #outros-projetos > h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+ #outros-projetos > p{
+    text-align: center;
+    margin: 20px;
+ }
+
+
+#projetos-complementares > div {
+    height: 200px;
+    width: 90px;
+    margin: 0 10px;
+    background-color: #B1B2B5;
+}
+
+#projetos-complementares{
+    display: flex;
+    flex-direction: row;
+}
+
+        /*rodape*/
+
+footer{
+    margin: 20px;
+ }
+
+footer > p {
+  margin-bottom: 20px;
+  }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+  
+div.iconec{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #B1B2B5;
+    margin: 8px;
+  }
+
+p.copy {
+    margin-top: 20px;
+}
+
+        
+
+
+
