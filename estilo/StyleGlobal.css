@@ -28,43 +28,8 @@ body{
 
 }
 
-
-.texto::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(159, 170, 255) );
-    transition: width 2s ease-in-out ;
-}
-.texto::before {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      right: 50.01%; /* Começa da direita */
-      width: 0; /* Inicia com largura zero */
-      height: 2px;
-      background-image: linear-gradient(to left, rgb(240, 248, 255), rgb(159, 170, 255));
-      transition: width 1.5s ease-in-out;
-}
-
-.texto.animar::before {
-  width: 50%;
-}
-
-.texto.animar::after {
-    width: 50%;
-}
-  
-
- h1.texto.animar {
-    position: relative;
-}
-
-
   /* cabeçalho */
+
  header{
   padding: 7px;
   display: flex;
@@ -98,7 +63,7 @@ body{
 
 }
 
-/* area sobre*/
+/* Área sobre*/
 
 
 section#sobre {
@@ -119,6 +84,7 @@ section#sobre  h1{
   -webkit-text-fill-color: transparent;
   margin-top: 50px;
   margin-bottom: 20px;
+
 }
 
 
@@ -195,9 +161,48 @@ section#sobre a:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
+/*Linha*/
+
+.texto::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(159, 170, 255) );
+    transition: width 2s ease-in-out ;
+}
+
+.texto::before {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      right: 50%; /* Começa da direita */
+      width: 0; /* Inicia com largura zero */
+      height: 2px;
+      background-image: linear-gradient(to left, rgb(240, 248, 255), rgb(159, 170, 255));
+      transition: width 1.5s ease-in-out;
+}
+
+.texto.animar::before {
+  width: 50%;
+}
+
+.texto.animar::after {
+    width: 50%;
+}
+  
+
+ h1.texto.animar {
+    position: relative;
+}
 
 
-/* area dos projetos principais*/
+
+
+
+/* Área dos projetos principais*/
 
 section#principais-projetos {
     padding: 50px 0;
@@ -224,53 +229,20 @@ div.Projetos-principais{
   flex-direction: row;
 }
 
- .esquerdo {
+.esquerdo {
     flex-direction: row-reverse;
 
-  }
+}
 
 .lado-direito, .lado-esquerdo{
     width: 38%;
   }
-/* 200px*/
         
 .image{
   width: 55%;
   height: 390px;
   background-color: #B1B2B5;
  }
-
- .slide-in-left {
-  animation: slideInLeft 1s ease-out forwards;
-}
-
-.slide-in-right {
-  animation: slideInRight 1s ease-out forwards;
-}
-
-
- @keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 
 
 .tecnologias-usadas {
@@ -280,7 +252,7 @@ div.Projetos-principais{
  }
 
 
-  /* outros projetos*/
+  /* Outros projetos*/
 
 #outros-projetos{
     padding: 40px 10px;
@@ -311,7 +283,7 @@ div.Projetos-principais{
     flex-direction: row;
 }
 
-        /*rodape*/
+/*rodape*/
 
 footer{
     margin: 20px;
@@ -338,8 +310,5 @@ div.iconec{
 p.copy {
     margin-top: 20px;
 }
-
-        
-
 
 

@@ -1,0 +1,39 @@
+
+/* Animação vindo da esquerda */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animação vindo da direita */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Estado inicial */
+.slide-in-left, .slide-in-right {
+  opacity: 0;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Quando ativar */
+.slide-in-left.active {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.slide-in-right.active {
+  animation: slideInRight 0.8s ease-out forwards;
+}
