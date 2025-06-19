@@ -1,57 +1,62 @@
+/*direito */
 .Posicao-titulo_direito {
-  position: relative;
-    left: -32px;
-    top: -77px;
+    position: relative;
+    left: -29px;
+    top: -29px;
+    width: 90px;;
 
+}
+
+.Posicao-Paragrafo_direito {
+  position: relative;
+  left: -105px;
+  top: -11px;
+  width: 261px;
 }
 
 .Posicao-2paragrafo_direito {
   position: relative;
-    left: -22px;
-    top: 23px;
+  left: -31px;
+  top: 6px;
   
 }
 
-.Posicao-Paragrafo_direito {
-position: absolute;
-    left: 146px;
-    top: 123px;
-    width: 210px;
 
-}
+
 
 /* Esquerdo*/
 
 .Posicao-titulo_Esquerdo {
-    position: relative;
-    right: -32px;
-    top: -77px;
+  position: relative;
+  right: -77px;
+  top: -29px;
+  width: 90px;
 
 }
 
 .Posicao-Paragrafo_Esquerdo {
-    position: absolute;
-    right: 35%;
-    top: 125px;
-    width: 210px;
+  position: relative;
+  right: 6px;
+  top: -17px;
+  width: 261px;
 }
 
 
 
 .Posicao-2paragrafo_Esquerdo {
     position: relative;
-    right: -22px;
-    top: 23px;
+    right: -61px;
+    top: 6px;
   
 }
 
 
-
+/*
 
 .Projetos-principais {
   position: relative;
 }
-
+*/
 
 /* Animação vindo da esquerda */
 @keyframes slideInLeft {

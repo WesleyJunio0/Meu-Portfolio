@@ -31,7 +31,7 @@ menu
             <section id="sobre">
                 <div id="apresentacao">
 
-                    <h1 class="texto">Seja bem-vindo! Meu nome é Wesley</h1>
+                    <h1>Seja bem-vindo! Meu nome é Wesley</h1>
                                    
                     <a href="#sobre-mim" aria-label="Ver Sobre mim">Sobre mim</a>
                        <a href="#principais-projetos" aria-label="Ver meus projetos">Projetos</a>
@@ -59,7 +59,7 @@ menu
 
 
             <section id="principais-projetos">
-                <h2>Meus Principais Projetos</h2>
+                <h2 class="texto">Meus Principais Projetos</h2>
             
 
 
@@ -154,36 +154,48 @@ menu
     </main>
 
     <footer>
-
-     <p>Aberto a oportunidades</p>
-  <p>Disponível para colaborar em projetos, integrar equipes e crescer com novos desafios.</p>
-  <p>Entre em contato, vamos conversar!</p>
-
-        <div class="row">
-            <div class="row">
-              <div class="iconec"></div>  <p>Contato</p>
-            </div>
-
-            <div class="row">
-             <div class="iconec"></div>   <p>Email</p>
-            </div>
-
-            <div class="row">
-                <div class="iconec"></div>  <p>Telefone</p>
-            </div>
-        </div>
-
-            <div class="row">
-
-                <div class="row">
-                    <div class="iconec"></div>  <p>linkedin</p>
-                </div>
-
-                <div class="row">
-                    <div class="iconec"></div>  <p>Github</p>
-                </div>
-            </div>
-             <p class=" copy">&copy; 2025 Wesley Marques. Este portfólio foi criado com fins profissionais. Todos os direitos reservados.</p>
+     
+            
+              <p class="espessura-p1">Aberto a oportunidades</p>
+           <p class="espessura-po">Disponível para colaborar em projetos, integrar equipes e crescer com novos desafios.</p>
+           <p class="espessura-po">Entre em contato, vamos conversar!</p>
+         <div class="row">
+             <div class="row">
+               <div class="iconec"></div>  <p class="espessura-po">Contato</p>
+             </div>
+             <div class="row">
+              <div class="iconec"></div>   <p class="espessura-po">Email</p>
+             </div>
+             <div class="row">
+                 <div class="iconec"></div>  <p class="espessura-po">Telefone</p>
+             </div>
+         </div>
+             <div class="row">
+                 <div class="row">
+                     <div class="iconec"></div>  <p class="espessura-po">linkedin</p>
+                 </div>
+                 <div class="row">
+                     <div class="iconec"></div>  <p class="espessura-po">Github</p>
+                 </div>
+             </div>
+              <p class=" copy espessura-po" >&copy; 2025 Wesley Marques. Este portfólio foi criado com fins profissionais. Todos os direitos reservados.</p>
+  
     </footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-left_p, .slide-in-left_p2, .slide-in-right_p, .slide-in-right_p2').forEach(el => {
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>
