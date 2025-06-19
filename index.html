@@ -182,20 +182,5 @@ menu
   
     </footer>
 
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-left_p, .slide-in-left_p2, .slide-in-right_p, .slide-in-right_p2').forEach(el => {
-    observer.observe(el);
-  });
-</script>
 </body>
 </html>
