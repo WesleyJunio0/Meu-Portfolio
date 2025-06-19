@@ -1,16 +1,56 @@
-.p2 {
+.Posicao-titulo_direito {
   position: relative;
-  left: -10px;
-  top: 30px;
+    left: -32px;
+    top: -77px;
+
+}
+
+.Posicao-2paragrafo_direito {
+  position: relative;
+    left: -22px;
+    top: 23px;
   
 }
 
-.p3 {
-  position: relative;
-  left: -30px;
-  top: 30px;
+.Posicao-Paragrafo_direito {
+position: absolute;
+    left: 146px;
+    top: 123px;
+    width: 210px;
+
 }
 
+/* Esquerdo*/
+
+.Posicao-titulo_Esquerdo {
+    position: relative;
+    right: -32px;
+    top: -77px;
+
+}
+
+.Posicao-Paragrafo_Esquerdo {
+    position: absolute;
+    right: 35%;
+    top: 125px;
+    width: 210px;
+}
+
+
+
+.Posicao-2paragrafo_Esquerdo {
+    position: relative;
+    right: -22px;
+    top: 23px;
+  
+}
+
+
+
+
+.Projetos-principais {
+  position: relative;
+}
 
 
 /* Animação vindo da esquerda */
@@ -38,7 +78,7 @@
 }
 
 /* Estado inicial */
-.slide-in-left, .slide-in-right, .slide-in-left_p, .slide-in-left_p2 {
+.slide-in-left, .slide-in-right, .slide-in-left_p, .slide-in-left_p2, .slide-in-right_p, .slide-in-right_p2{
   opacity: 0;
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
@@ -60,4 +100,14 @@ animation: slideInRight 1s ease-out forwards;
 .slide-in-left_p2.active {
 animation: slideInRight 1.2s ease-out forwards;
 }
+
+
+.slide-in-right_p.active {
+animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right_p2.active {
+animation: slideInLeft 1.2s ease-out forwards;
+}
+
 
