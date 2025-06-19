@@ -229,7 +229,7 @@ section#sobre a:hover {
 section#principais-projetos {
     padding: 50px 0;
     background-color: aliceblue;
-    border-radius: 10px 10px 0;
+    border-radius: 10px 10px 0 0;
     
    
 } 
@@ -291,23 +291,33 @@ div.Projetos-principais{
   margin: 20px 0;
 }
 
- #outros-projetos > p{
+ #outros-projetos > p {
     text-align: center;
     margin: 20px;
  }
 
 
-#projetos-complementares > div {
-    height: 200px;
-    width: 90px;
-    margin: 0 10px;
+#projetos-complementares .quadro {
+    height: 300px;
+    width: 150px;
+    margin: 0 8px;
     background-color: #B1B2B5;
 }
 
-#projetos-complementares{
-    display: flex;
-    flex-direction: row;
+#projetos-complementares {
+    overflow-x: auto;
+  white-space: nowrap;
+
 }
+
+
+#rolagem {
+  display: flex;
+  flex-direction: row;
+  width: 1070px;
+ 
+}
+
 
 /*rodape*/
 
