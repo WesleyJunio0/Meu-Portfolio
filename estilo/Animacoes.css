@@ -1,3 +1,17 @@
+.p2 {
+  position: relative;
+  left: -10px;
+  top: 30px;
+  
+}
+
+.p3 {
+  position: relative;
+  left: -30px;
+  top: 30px;
+}
+
+
 
 /* Animação vindo da esquerda */
 @keyframes slideInLeft {
@@ -24,7 +38,7 @@
 }
 
 /* Estado inicial */
-.slide-in-left, .slide-in-right {
+.slide-in-left, .slide-in-right, .slide-in-left_p, .slide-in-left_p2 {
   opacity: 0;
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
@@ -37,3 +51,13 @@
 .slide-in-right.active {
   animation: slideInRight 0.8s ease-out forwards;
 }
+
+.slide-in-left_p.active {
+animation: slideInRight 1s ease-out forwards;
+}
+
+
+.slide-in-left_p2.active {
+animation: slideInRight 1.2s ease-out forwards;
+}
+

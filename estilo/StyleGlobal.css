@@ -39,6 +39,17 @@ body{
 
  }
 
+.material-symbols-outlined {
+  font-size: 45px !important;
+   background: linear-gradient(90deg, #1b1f3b, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-self: flex-start;
+   margin-left: auto;
+
+}
+
+
  header > p {
   font-family: var(--font-f1);
   font-size: 0.9em;
@@ -57,11 +68,6 @@ body{
     margin-right: 15px;
   }
 
- nav {
-   align-self: flex-start;
-   margin-left: auto;
-
-}
 
 /* Área sobre*/
 
@@ -94,6 +100,10 @@ section#sobre  h1{
   margin-top: 200px;
   padding: 60px 20px;
   text-align: center;
+  border: 3px solid;
+  background: linear-gradient(135deg, #0e0f1438, #1c1f2538);
+  border-image: linear-gradient(135deg, #4a00e0, #1b1f3b) 1;
+ 
 }
 
 #sobre-mim h2 {
@@ -105,6 +115,7 @@ section#sobre  h1{
   -webkit-text-fill-color: transparent;
   margin-bottom: 30px;
 }
+
 
 #sobre-mim p {
   font-size: 1.1em;
@@ -124,18 +135,24 @@ section#sobre  h1{
   color: #1b1f3b;
   margin-top: 40px;
   font-size: 1.3em;
+  
 }
 
 #sobre-mim #tecnologias {
   width: 90%;
   max-width: 800px;
-  height: 40px;
+  height: 60px;
   margin: 0 auto;
-  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right,  #4b00e006, #1b1f3b06);
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border: solid 1px #4b00e01f ;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.077);
 }
 
+.tecnologia-usadas {
+  padding: 5px;
+  width: 55px;
+}
 
 
 section#sobre a {
@@ -227,6 +244,7 @@ div.Projetos-principais{
 
 .direito{
   flex-direction: row;
+
 }
 
 .esquerdo {
@@ -235,7 +253,10 @@ div.Projetos-principais{
 }
 
 .lado-direito, .lado-esquerdo{
-    width: 38%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
         
 .image{
