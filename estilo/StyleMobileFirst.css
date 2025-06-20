@@ -264,12 +264,12 @@ div.Projetos-principais{
     margin: 40px 0;
 }
 
-.direito{
+.Projetos-principais.direito{
   flex-direction: row;
 
 }
 
-.esquerdo {
+.Projetos-principais.esquerdo {
   flex-direction: row-reverse;
 
 }
@@ -295,6 +295,7 @@ div.Projetos-principais{
     height: 30px;
  }
 
+ 
 
   /* Outros projetos*/
 
