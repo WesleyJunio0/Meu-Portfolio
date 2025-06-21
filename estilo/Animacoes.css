@@ -12,6 +12,7 @@
   left: -105px;
   top: -11px;
   width: 261px;
+  
 }
 
 .Posicao-2paragrafo_direito {
@@ -35,13 +36,15 @@ position: relative;
 
 
 */
+
 .Posição-do-lado-esquerdo {
   position: relative;
 }
 
+
 .Posicao-titulo_Esquerdo {
     position: absolute;
-    right: 16px;
+    right: -20px;
     top: 64px;
     width: 90px;
 
@@ -51,18 +54,27 @@ position: relative;
 
 .Posicao-Paragrafo_Esquerdo {
     position: absolute;
-    right: -80px;
+    right: -119px;
     top: 102px;
     width: 261px;
 }
 
-.Posição-da-area-tec{
-  position: absolute;
-    right: -115px;
-    top: 229px;
-    width: 261px;
 
+.Posição-da-area-tec_direito {
+    position: absolute;
+    right: -96px;
+    top: 227px;
+    width: 206px;
 }
+
+.Posição-da-area-tec_esquerdo {
+  position: relative;
+  left: -60px;
+  top: 6px;
+  width: 206px;
+}
+
+
 
 /*
 position: relative;
@@ -79,7 +91,7 @@ position: relative;
 
 .Posicao-2paragrafo_Esquerdo {
   position: absolute;
-  right: -23px;
+  right: -51px;
   top: 206px;
 }
 
