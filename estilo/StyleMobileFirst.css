@@ -91,9 +91,10 @@ ul > a {
 
 a > li {
   color: white;
-  font-weight: 500;
+  font-weight: 300;
   transition: .2s;
   border-radius: 9px;
+  font-family: var(--font-f1);
 }
 
 li.hover:hover {
@@ -141,7 +142,6 @@ li.hover:hover {
   font-family: var(--font-f1);
   font-size: 0.9em;
   font-weight: bold;
-  color: aliceblue;
  }
  
 

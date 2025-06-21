@@ -52,7 +52,57 @@
 
 
 @media (min-width: 769px) {
-   
+
+    header{
+        padding: 7px;
+        height: 75px;
+        justify-content: flex-end
+
+    }
+    nav {
+        position: sticky;
+        height: 100%;
+        border-radius: 0;
+        width: 98%;
+    }
+    ul {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        background-color: #0e1c3600;
+    
+    }
+
+
+    a > li {
+        color: #313a5c;
+        border-radius: 0;
+        font-weight: 600;
+    }
+
+
+    li {
+        padding: 0 22px 0 22px;
+        font-size: 1.2em;
+        transition: border-color 0.3s ease;
+        border-bottom: solid 2px transparent;
+    }
+
+    li.hover:hover {
+        background-color: #0e1c3600;
+        transition: .4s;
+        border-bottom: solid 2px rgb(75, 75, 75);
+    }
+
+    .li-ex {
+        display: none;
+    }
+
+
+
+
+
+
     #sobre-mim p {
     font-size: 1.3em;
     }
@@ -97,7 +147,22 @@
 
 
 @media (min-width: 1025px) {
+    ul {
+        width: 900px;
+        height: 100%;
+        margin-left: auto;
+        flex-direction: row;
+        background-color: #0e1c3600;
     
+    }
+
+    li {
+        
+    justify-content: space-around;
+
+    }
+
+
     section#principais-projetos > h2 {
         font-size: 2.1em;
     }
