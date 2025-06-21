@@ -45,7 +45,7 @@ p {
  }
 
 
-
+ 
 nav {
     position: absolute;
     right: 1px;
@@ -54,21 +54,23 @@ nav {
     overflow: hidden;
 }
 
+
  #span2 {
-  background-color: #0e1c3662 !important;
   display: none;
  }
 
+
 .display { display: none;  }
+
 
 ul {
   width: 235px;
-  height: 197px;
+  height: 243px;
   list-style: none;
   display: flex;
   flex-direction: column;
   background-color: #0e1c3662;
-  
+ 
 }
 
 li {
@@ -76,35 +78,62 @@ li {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  font-size: 1.2em;
 }
 
 ul > a {
   height: 100%;
   width: 100%;
   padding: 5px;
-  border-radius: 20px;
-  overflow: hidden;
 }
 
 a > li {
   color: white;
   font-weight: 500;
+  transition: .2s;
+  border-radius: 9px;
 }
 
-li:hover {
+li.hover:hover {
   background-color: #0e1c3643;
+  transition: .4s;
 }
 
-.material-symbols-outlined {
+.icon-menu-entrar{
   font-size: 45px !important;
   background: linear-gradient(90deg, #1b1f3b, #4a00e0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  align-self: flex-start;
+   align-self: flex-start;
   margin-left: auto;
 
+
+}
+
+.icon-menu-entrar:hover {
+  background-image: linear-gradient(90deg, #1b1f3ba4, #4b00e0a4);
+  cursor: pointer;
+}
+
+.icon-menu-sair {
+  font-size: 45px;
+  font-size: 45px !important;
+  align-self: flex-start;
+  margin-left: auto;
+  transition: .4s;
+
+}
+
+.icon-menu-sair:hover {
+  background-color: #0e1c3643;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.icons-dentro-do-menu {
+  margin: 0 23px 0 12px;
 }
 
 

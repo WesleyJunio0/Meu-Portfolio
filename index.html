@@ -15,19 +15,34 @@
 </head>
 <body>
     <header> <!--<div id="icone"></div><p class="nomedousuario">Wesley Marques</p>-->
-        <span id="span1" class="material-symbols-outlined"  onclick="navegar('span1')">
+        <span id="span1" class="material-symbols-outlined   icon-menu-entrar"  onclick="navegar('span1')">
 menu
 </span>
     <nav class="display">
        <ul>
-            <li><span id="span2" class="material-symbols-outlined" onclick="navegar('span2')">
+            <li><span id="span2" class="material-symbols-outlined icon-menu-sair" onclick="navegar('span2')">
     close
     </span></li>
-            <a href="#sobre-mim"><li>Sobre</li></a>
-            <a href="#principais-projetos"><li>Projetos</li></a>
-            <a href="#contato"><li>Contato</li></a>
+
+            <a href="#sobre-mim"><li class="hover">Sobre <span class="material-symbols-outlined icons-dentro-do-menu">
+person
+</span></li></a>
+
+              <a href="#sobre-mim"><li class="hover"> Tecnologias <span class="material-symbols-outlined icons-dentro-do-menu">
+code
+</span></li></a>
+
+            <a href="#principais-projetos"><li class="hover">Projetos <span class="material-symbols-outlined icons-dentro-do-menu">
+folder_code
+</span></li></a>
+
+            <a href="#contato"><li class="hover">Contato <span class="material-symbols-outlined icons-dentro-do-menu">
+all_inbox
+</span></li></a>
+
         </ul>
     </nav>
+    
     </header>
 
     <main>
