@@ -1,18 +1,172 @@
 
 
 @media (min-width: 600px) {
-   
+    section#principais-projetos h3 {
+        font-size: 1.5em;
+    }
+
+    .Posicao-Paragrafo_direito {
+        width: 338px;
+
+    }
+
+    .Posicao-titulo_Esquerdo {
+        right: 40px;
+
+    }
+
+    .Posicao-Paragrafo_Esquerdo {
+        width: 338px;
+
+    }
+
+    section#principais-projetos p {
+        font-size: 1em;
+
+    }
+    .Posição-da-area-tec_esquerdo {
+        top: 253px;
+        right: -72px;
+        width: 230px;
+    }
+
+    .Posicao-2paragrafo_Esquerdo {
+        right: -25px;
+        top: 229px;
+
+
+
+    }
+    div.Projetos-principais {
+        height: 454px;
+
+    }
+
+    .image {
+        height: 100%;
+
+    }
 
 }
+
 
 
 @media (min-width: 769px) {
    
+    #sobre-mim p {
+    font-size: 1.3em;
+    }
+    
+    section#principais-projetos > h2 {
+        font-size: 1.7em;
+    }
+
+
+    .Posicao-titulo_Esquerdo {
+        top: 113px;
+        right: 38px;
+
+    }
+
+
+    .Posicao-Paragrafo_Esquerdo {
+        top: 151px;
+
+    }
+
+
+    .Posicao-2paragrafo_Esquerdo {
+        top: 282px;
+        right: -30px;
+    }
+
+
+    .Posição-da-area-tec_esquerdo {
+        top: 307px;
+        right: -71px;
+    }
+
+
+    div.Projetos-principais {
+        height: 514px;
+
+    }
 
 }
 
-@media (min-width: 1024px) {
+
+
+@media (min-width: 1025px) {
+    
+    section#principais-projetos > h2 {
+        font-size: 2.1em;
+    }
+    
+    div.Projetos-principais {
+        height: 514px;
+
+    }
+
+    .Posicao-titulo_direito {
+    width: 103px;
+}
+
+    .Posicao-titulo_Esquerdo {
+    width: 103px;
+    }
+
+    .Posicao-Paragrafo_direito {
+        width: 422px;
+    }
+
+    .Posicao-Paragrafo_Esquerdo {
+        width: 422px;
+    }
+
+    section#principais-projetos p {
+        font-size: 1.25em;
+    }
+
+
+    section#principais-projetos h3 {
+        font-size: 1.9em;
+        width: 429px;
+    
+    }
+
+    .Posicao-titulo_Esquerdo {
+        top: 102px;
+        right: 97px;
+    }
+
+    .Posicao-Paragrafo_Esquerdo {
+        top: 148px;
+    
+    }
+
+    .Posicao-2paragrafo_Esquerdo {
+        right: 1px;
+        top: 310px;
+    }
+
+    .Posição-da-area-tec_esquerdo {
+        top: 340px;
+        right: -39px;
+        width: 275px;
+    }
+
+    .Posição-da-area-tec_direito {
+        width: 275px;
+    }
+
   
 }
 
+
+@media (min-width: 1280px) {
+    .image {
+        width: 685px;
+
+    }
+}
 

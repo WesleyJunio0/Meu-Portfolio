@@ -1,6 +1,15 @@
+.posicao-relativa {
+  position: relative;
+}
+
+.posicao-absoluta {
+  position: absolute;
+}
+
+
 /*direito */
+
 .Posicao-titulo_direito {
-    position: relative;
     left: -29px;
     top: -29px;
     width: 90px;;
@@ -8,7 +17,7 @@
 }
 
 .Posicao-Paragrafo_direito {
-  position: relative;
+  
   left: -105px;
   top: -11px;
   width: 261px;
@@ -16,26 +25,21 @@
 }
 
 .Posicao-2paragrafo_direito {
-  position: relative;
+ 
   left: -31px;
   top: 6px;
   
 }
 
+.Posição-da-area-tec_direito {
+     left: -60px;
+     top: 6px;
+     width: 206px;
+}
 
 
 
 /* Esquerdo*/
-
-/*
-position: relative;
-  right: -77px;
-  top: -29px;
-  width: 90px;
-
-
-
-*/
 
 .Posição-do-lado-esquerdo {
   position: relative;
@@ -51,42 +55,12 @@ position: relative;
 }
 
 
-
 .Posicao-Paragrafo_Esquerdo {
     position: absolute;
     right: -119px;
     top: 102px;
     width: 261px;
 }
-
-
-.Posição-da-area-tec_direito {
-    position: absolute;
-    right: -96px;
-    top: 227px;
-    width: 206px;
-}
-
-.Posição-da-area-tec_esquerdo {
-  position: relative;
-  left: -60px;
-  top: 6px;
-  width: 206px;
-}
-
-
-
-/*
-position: relative;
-  right: 6px;
-  top: -17px;
-  width: 261px;
-
- position: relative;
-    right: -61px;
-    top: 6px;
-*/
-
 
 
 .Posicao-2paragrafo_Esquerdo {
@@ -96,14 +70,16 @@ position: relative;
 }
 
 
-/*
-
-.Projetos-principais {
-  position: relative;
+.Posição-da-area-tec_esquerdo {
+    right: -96px;
+    top: 227px;
+    width: 206px;
+ 
 }
-*/
+
 
 /* Animação vindo da esquerda */
+
 @keyframes slideInLeft {
   from {
     transform: translateX(-100%);
@@ -115,7 +91,9 @@ position: relative;
   }
 }
 
+
 /* Animação vindo da direita */
+
 @keyframes slideInRight {
   from {
     transform: translateX(100%);
@@ -128,12 +106,14 @@ position: relative;
 }
 
 /* Estado inicial */
-.slide-in-left, .slide-in-right, .slide-in-left_p, .slide-in-left_p2, .slide-in-right_p, .slide-in-right_p2{
+.slide-in-left, .slide-in-right, .slide-in-left_p, .slide-in-left_p2, .slide-in-right_p, .slide-in-right_p2 {
   opacity: 0;
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
+
 /* Quando ativar */
+
 .slide-in-left.active {
   animation: slideInLeft 0.8s ease-out forwards;
 }

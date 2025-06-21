@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 
-p{
+p {
  font-family: var(--font-f1);
 }
 
@@ -86,9 +86,9 @@ section#sobre {
   }
 
 
-  #apresentacao {
+#apresentacao {
     height: 60vh;
-  }
+}
 
 section#sobre  h1{
   font-family: "Poppins", sans-serif;
@@ -131,10 +131,8 @@ section#sobre  h1{
   font-family: "Raleway", sans-serif;
   text-align: justify;
   color: #313a5c;  
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.7;
 }
 
@@ -151,7 +149,7 @@ section#sobre  h1{
   width: 90%;
   max-width: 800px;
   height: 60px;
-  margin: 0 auto;
+  margin: auto;
   background: linear-gradient(to right,  #4b00e006, #1b1f3b06);
   border-radius: 8px;
   border: solid 1px #4b00e01f ;
@@ -241,6 +239,7 @@ section#principais-projetos > h2 {
   color: #313a5c;
 }
 
+
 section#principais-projetos p {
   color: #2c3e50;
   font-weight: 400;
@@ -249,6 +248,7 @@ section#principais-projetos p {
   text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.174);
 }
 
+
 section#principais-projetos h3 {
   color: #313a5c;
   font-family: var(--font-f1);
@@ -256,13 +256,15 @@ section#principais-projetos h3 {
   text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.188);
     
 }
-        
-div.Projetos-principais{
+ 
+
+div.Projetos-principais {
     height: 431px;
     padding: 20px 0;
     display: flex;
     margin: 40px 0;
 }
+
 
 .Projetos-principais.direito{
   flex-direction: row;
@@ -290,8 +292,7 @@ div.Projetos-principais{
 
 
 .tecnologias-usadas {
-    background-color: #B1B2B5;
-    width: 90%;
+    background-color: #7d7d7d;
     height: 30px;
  }
 
@@ -358,6 +359,7 @@ div.Projetos-principais{
     height: 100%;
 }
 
+
 .quadro h3 {
     width: 100%;
     padding-left: 20px;
@@ -368,7 +370,6 @@ div.Projetos-principais{
     font-size: 1em;
     color: aliceblue;
 }
-
 
 
 .quadro .informacoes-projeto {
@@ -389,6 +390,7 @@ div.Projetos-principais{
     flex-wrap: nowrap;
 }
 
+
 .quadro:hover .informacoes-projeto {
     opacity: 0.7;
 
@@ -403,6 +405,7 @@ div.Projetos-principais{
 
 
 }
+
 /*rodape*/
 
 footer {
@@ -430,6 +433,7 @@ footer  p {
   display: flex;
   flex-direction: row;
   align-items: center;
+
   }
   
 div.iconec{
