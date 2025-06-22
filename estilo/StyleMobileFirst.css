@@ -17,8 +17,10 @@ html{
 body{
    background: linear-gradient(to bottom,rgb(159, 170, 255) 2%, rgb(174, 183, 254)) 90%;
    width: 100%;
-
+   overflow-x: hidden;
+   
 }
+
 
 h1, h2, h3 {
      font-family: var(--font-f1);
