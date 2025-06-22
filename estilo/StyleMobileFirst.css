@@ -351,13 +351,16 @@ div.Projetos-principais {
 
 .Projetos-principais.direito{
   flex-direction: row;
+  position: relative;
 
 }
 
 .Projetos-principais.esquerdo {
   flex-direction: row-reverse;
+  position: relative;
 
 }
+
 
 .lado-direito, .lado-esquerdo{
     width: 40%;
@@ -366,15 +369,41 @@ div.Projetos-principais {
     justify-content: center;
   }
         
-.image {
+ .image {
+  position: relative;
   width: 55%;
   height: 390px;
   background-color: #B1B2B5;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.149);
-
-  
+  z-index: 2;
  
  }
+
+  div.bordar-solta-esquerda{
+  width: 55%;
+  height: 390px;
+  position: absolute;
+  top: 62px;
+  left: 18px;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.205);
+  z-index: 1;
+  box-sizing: border-box;
+ }
+
+ div.bordar-solta-direita{
+  width: 55%;
+  height: 390px;
+  position: absolute;
+  top: 2px;
+  right: 18px;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.205);
+  z-index: 1;
+  box-sizing: border-box;
+ }
+
+
 
 .tecnologias-usadas {
     background-color: #7d7d7d;

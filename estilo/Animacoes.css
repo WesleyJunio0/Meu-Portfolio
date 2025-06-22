@@ -1,10 +1,13 @@
 .posicao-relativa {
   position: relative;
+  z-index: 2;
 }
 
 .posicao-absoluta {
   position: absolute;
+  z-index: 2;
 }
+
 
 
 /*direito */
