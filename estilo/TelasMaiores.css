@@ -47,6 +47,14 @@
 
     }
 
+    div.bordar-solta-esquerda{
+        height: 414px;
+    }
+
+    div.bordar-solta-direita{
+        height: 414px;
+    }
+
 }
 
 
@@ -140,6 +148,14 @@
     div.Projetos-principais {
         height: 514px;
 
+    }
+
+     div.bordar-solta-esquerda{
+        height: 474px;
+    }
+
+    div.bordar-solta-direita{
+        height: 474px;
     }
 
 }
@@ -314,6 +330,14 @@
     .image {
         width: 685px;
 
+    }
+
+    div.bordar-solta-esquerda{
+        width: 685px;
+    }
+
+    div.bordar-solta-direita{
+        width: 685px;
     }
 }
 
