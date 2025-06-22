@@ -57,4 +57,4 @@ window.addEventListener('resize', telasMaiores);
 
 window.addEventListener('load', telasMaiores);
 
- 
+

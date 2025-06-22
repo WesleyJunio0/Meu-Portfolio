@@ -3,17 +3,17 @@
 
 
      /*script da linha do titulo Meus principais Projetos */
-     const texto = document.querySelector('.texto');
-    const observer1 = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animar');
-          observer.unobserve(entry.target); // Para a animação rodar só uma vez
-        }
-      });
-    }, { threshold: 1 }); // Anima quando 100% do elemento está visível
+const texto = document.querySelector('.texto');
+const observer1 = new IntersectionObserver((entries, observer) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('animar');
+observer.unobserve(entry.target); // Para a animação rodar só uma vez
+}
+});
+}, { threshold: 1 }); // Anima quando 100% do elemento está visível
 
-    observer1.observe(texto);
+observer1.observe(texto);
  
 
  
