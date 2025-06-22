@@ -159,6 +159,11 @@
         right: 35px;
     }
 
+    #projetos-complementares .quadro {
+        height: 487px;
+        max-width: 220px;
+    }
+
 }
 
 
