@@ -224,6 +224,88 @@
         width: 275px;
     }
 
+
+
+
+    footer p {
+        margin-bottom: 10px;
+    }
+
+    #contatos {
+        display: block;
+         color: rgb(191, 197, 203);
+        padding: 5px 0 0;
+        padding-left: calc(20vw - 142px);
+        font-weight: bolder;
+
+    }
+
+    div.iconec {
+        display: none;
+    }
+
+
+    #flex {
+        display: flex;
+        position: relative;
+    }
+
+    #flex::before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background-image: linear-gradient(to right, #1b1f3b, rgb(240, 248, 255));;
+        top: 200px;
+        right: 50%;
+    }
+    
+
+
+
+    #flex::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background-image: linear-gradient(to left, #1b1f3b, rgb(240, 248, 255));
+        top: 200px;
+        left: 50%;
+    }
+
+    
+
+    .telaM {
+        width: 50%;
+    }
+
+
+
+
+
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        
+       
+    }
+
+    .row p {
+         margin: 0;
+         padding: 8px 0 0 ;
+         padding-left: calc(20vw - 142px);
+    
+    }
+
+
+    p.copy {
+    margin-top: 42px;
+    }
+
+
   
 }
 

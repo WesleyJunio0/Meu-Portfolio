@@ -503,6 +503,10 @@ footer  p {
   color: rgb(191, 197, 203);
   }
 
+  #contatos {
+    display: none;
+  }
+
   .espessura-p1 {
     font-weight: bolder;
   }
