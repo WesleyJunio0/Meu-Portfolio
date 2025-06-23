@@ -311,7 +311,7 @@ h2.texto.animar {
 
 section#principais-projetos {
   padding: 50px 0;
-  background-color: rgb(240, 248, 255);
+  background-color: #f0f8ff;
   border-radius: 10px 10px 0 0;
     
    
@@ -369,7 +369,10 @@ div.Projetos-principais {
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
   }
+
+
         
  .image {
   position: relative;
@@ -403,9 +406,8 @@ div.Projetos-principais {
   border: 2px solid rgba(0, 0, 0, 0.205);
   z-index: 1;
   box-sizing: border-box;
+  box-shadow: 1px 1px 10px 0px  rgba(49, 58, 92, 0.175);
  }
-
-
 
 .tecnologias-usadas {
     background-color: #7d7d7d;
@@ -418,7 +420,6 @@ div.Projetos-principais {
 
 #outros-projetos{
     padding: 40px 10px;
-    
 }
         
  #outros-projetos > h2 {
