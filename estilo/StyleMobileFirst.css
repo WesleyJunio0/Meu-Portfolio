@@ -313,9 +313,10 @@ section#principais-projetos {
   padding: 50px 0;
   background-color: #f0f8ff;
   border-radius: 10px 10px 0 0;
-    
    
 } 
+
+
 
 section#principais-projetos > h2 {
   text-align: center;
@@ -354,7 +355,6 @@ div.Projetos-principais {
 .Projetos-principais.direito{
   flex-direction: row;
   position: relative;
-
 }
 
 .Projetos-principais.esquerdo {
@@ -362,6 +362,8 @@ div.Projetos-principais {
   position: relative;
 
 }
+
+
 
 
 .lado-direito, .lado-esquerdo{
@@ -390,7 +392,7 @@ div.Projetos-principais {
   position: absolute;
   top: 42px;
   left: 18px;
-  background: transparent;
+  background: #f0f8ff;
   border: 2px solid rgba(0, 0, 0, 0.205);
   z-index: 1;
   box-sizing: border-box;
@@ -402,7 +404,7 @@ div.Projetos-principais {
   position: absolute;
   top: 2px;
   right: 18px;
-  background: transparent;
+  background: #f0f8ff;
   border: 2px solid rgba(0, 0, 0, 0.205);
   z-index: 1;
   box-sizing: border-box;
