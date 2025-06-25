@@ -145,17 +145,6 @@ li.hover:hover {
   font-size: 0.9em;
   font-weight: bold;
  }
- 
-
- #icone {
-    width: 60px;
-    height: 60px;
-    background-image: url(../imagens/imagen-mobile.png);
-    background-position: center left;
-    background-size: cover;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
 
 
 /* Área sobre*/
@@ -196,12 +185,9 @@ section#sobre  h1{
 }
 
 
-
 .imagenapresentação {
 display: none;
 }
-
-
 
 
 #sobre-mim {
@@ -441,7 +427,6 @@ div.Projetos-principais {
   border: 2px solid rgba(0, 0, 0, 0.205);
   z-index: 1;
   box-sizing: border-box;
-  box-shadow: 1px 1px 10px 0px  rgba(49, 58, 92, 0.175);
  }
 
 .tecnologias-usadas {
