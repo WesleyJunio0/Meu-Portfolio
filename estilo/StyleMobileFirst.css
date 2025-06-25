@@ -31,7 +31,7 @@ a {
 }
 
 p {
- font-family: var(--font-f1);
+ font-family: var(--font-f2);
 }
 
   /* cabeçalho */
@@ -175,6 +175,13 @@ section#sobre {
     height: 90vh;
 }
 
+#apresentacao p {
+  margin: 0 0 27px 0px;
+  color: #313a5c;
+  font-weight: 500; 
+  max-width: 730px;
+}
+
 section#sobre  h1{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -183,10 +190,13 @@ section#sobre  h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   
 
 }
+
+
+
 .imagenapresentação {
 display: none;
 }
@@ -201,14 +211,22 @@ display: none;
 }
 
 .sobre-min {
-
   padding: 60px 20px;
   text-align: center;
-  border: 3px solid;
   background: linear-gradient( 135deg, #0e0f1438, #1c1f2538);
-  border-image: linear-gradient(135deg, #4a00e0, #1b1f3b) 1;
-
+  position: relative;
 }
+
+.sobre-min::after {
+        content: "";
+        height: 103%;
+        width: 103%;
+        border: 3px solid;
+        position: absolute;
+        border-image: linear-gradient(135deg, #4a00e0, #1b1f3b) 1;
+        top: -1.5%;
+        right: -2%;
+    }
 
 
 #sobre-mim h2 {

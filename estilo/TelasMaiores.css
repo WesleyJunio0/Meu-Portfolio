@@ -200,10 +200,11 @@
     .sobre-min {
         padding: 60px 20px;
         text-align: center;
-        border: 3px solid;
-        background: linear-gradient(135deg, #0e0f1438, #1c1f2538);
-        border-image: linear-gradient(135deg, #4a00e0, #1b1f3b) 1;
+        background: linear-gradient(135deg, #0e0f143d, #1c1f250f);
+        position: relative;
     }
+
+    
 
 
     ul {
