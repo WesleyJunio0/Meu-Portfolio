@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --font-f1: "Poppins", sans-serif;
-  --font-f2: "Lobster", sans-serif;
+  --font-f2: "Inter", sans-serif;
 }
 
 html{
@@ -31,7 +31,7 @@ a {
 }
 
 p {
- font-family: var(--font-f1);
+ font-family: var(--font-f2);
 }
 
   /* cabeçalho */
@@ -145,17 +145,6 @@ li.hover:hover {
   font-size: 0.9em;
   font-weight: bold;
  }
- 
-
- #icone {
-    width: 60px;
-    height: 60px;
-    background-image: url(../imagens/imagen-mobile.png);
-    background-position: center left;
-    background-size: cover;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
 
 
 /* Área sobre*/
@@ -172,7 +161,14 @@ section#sobre {
 
 
 #apresentacao {
-    height: 60vh;
+    height: 90vh;
+}
+
+#apresentacao p {
+  margin: 0 0 27px 0px;
+  color: #313a5c;
+  font-weight: 500; 
+  max-width: 730px;
 }
 
 section#sobre  h1{
@@ -183,22 +179,41 @@ section#sobre  h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   
 
 }
 
 
+.imagenapresentação {
+display: none;
+}
+
+
 #sobre-mim {
-  background-color: rgb(159, 170, 255);
-  margin-top: 200px;
+ display: flex;
+ flex-direction: row;
+
+}
+
+.sobre-min {
   padding: 60px 20px;
   text-align: center;
-  border: 3px solid;
   background: linear-gradient( 135deg, #0e0f1438, #1c1f2538);
-  border-image: linear-gradient(135deg, #4a00e0, #1b1f3b) 1;
- 
+  position: relative;
 }
+
+.sobre-min::after {
+        content: "";
+        height: 103%;
+        width: 103%;
+        border: 3px solid;
+        position: absolute;
+        border-image: linear-gradient(135deg, #4a00e0, #1b1f3b) 1;
+        top: -1.5%;
+        right: -2%;
+    }
+
 
 #sobre-mim h2 {
   font-size: 2em;
@@ -270,6 +285,10 @@ section#sobre a:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
+.imagenSobre{
+  display: none;
+}
+
 /*Linha*/
 
 .texto::after {
@@ -311,11 +330,12 @@ h2.texto.animar {
 
 section#principais-projetos {
   padding: 50px 0;
-  background-color: rgb(240, 248, 255);
+  background-color: #f0f8ff;
   border-radius: 10px 10px 0 0;
-    
    
 } 
+
+
 
 section#principais-projetos > h2 {
   text-align: center;
@@ -354,7 +374,6 @@ div.Projetos-principais {
 .Projetos-principais.direito{
   flex-direction: row;
   position: relative;
-
 }
 
 .Projetos-principais.esquerdo {
@@ -364,12 +383,17 @@ div.Projetos-principais {
 }
 
 
+
+
 .lado-direito, .lado-esquerdo{
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
   }
+
+
         
  .image {
   position: relative;
@@ -387,7 +411,7 @@ div.Projetos-principais {
   position: absolute;
   top: 42px;
   left: 18px;
-  background: transparent;
+  background: #f0f8ff;
   border: 2px solid rgba(0, 0, 0, 0.205);
   z-index: 1;
   box-sizing: border-box;
@@ -399,13 +423,11 @@ div.Projetos-principais {
   position: absolute;
   top: 2px;
   right: 18px;
-  background: transparent;
+  background: #f0f8ff;
   border: 2px solid rgba(0, 0, 0, 0.205);
   z-index: 1;
   box-sizing: border-box;
  }
-
-
 
 .tecnologias-usadas {
     background-color: #7d7d7d;
@@ -418,7 +440,6 @@ div.Projetos-principais {
 
 #outros-projetos{
     padding: 40px 10px;
-    
 }
         
  #outros-projetos > h2 {

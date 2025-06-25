@@ -169,6 +169,44 @@
 
 
 @media (min-width: 1025px) {
+    #apresentacao {
+        height: 80vh;
+        position: relative;
+    }
+    .imagenapresentacao {
+        display: block;
+        width: 50%;
+        background-image: url(../imagens/hello.svg);
+        height: 428px;
+        position: absolute;
+        right: -23px;
+        top: -12px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+
+
+    .imagenSobre {
+        display: block;
+        width: 50%;
+        background-image: url(../imagens/dev-productivity.svg);
+        height: 428px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .sobre-min {
+        padding: 60px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #0e0f143d, #1c1f250f);
+        position: relative;
+    }
+
+    
+
+
     ul {
         width: 900px;
         height: 100%;
@@ -184,6 +222,13 @@
 
     }
 
+    #sobre-mim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    }
 
     section#principais-projetos > h2 {
         font-size: 2.1em;
