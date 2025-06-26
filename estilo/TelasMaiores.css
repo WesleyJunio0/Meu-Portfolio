@@ -330,7 +330,7 @@
         width: 50%;
         height: 2px;
         background-image: linear-gradient(to right, #1b1f3b, rgb(240, 248, 255));;
-        top: 200px;
+        top: 181px;
         right: 50%;
     }
     
@@ -343,7 +343,7 @@
         width: 50%;
         height: 2px;
         background-image: linear-gradient(to left, #1b1f3b, rgb(240, 248, 255));
-        top: 200px;
+        top: 181px;
         left: 50%;
     }
 
