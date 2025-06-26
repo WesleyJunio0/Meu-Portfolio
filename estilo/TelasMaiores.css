@@ -1,5 +1,4 @@
 
-
 @media (min-width: 600px) {
     section#principais-projetos h3 {
         font-size: 1.5em;
@@ -111,6 +110,12 @@
     #sobre-mim p {
     font-size: 1.3em;
     }
+
+    .tecnologias {
+    width: 165px;
+    height: 195px;
+
+    }
     
     section#principais-projetos > h2 {
         font-size: 1.7em;
@@ -173,6 +178,7 @@
         height: 80vh;
         position: relative;
     }
+
     .imagenapresentacao {
         display: block;
         width: 50%;
@@ -200,7 +206,6 @@
     .sobre-min {
         padding: 60px 20px;
         text-align: center;
-        background: linear-gradient(135deg, #0e0f143d, #1c1f250f);
         position: relative;
     }
 

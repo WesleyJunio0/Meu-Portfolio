@@ -179,7 +179,7 @@ section#sobre  h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 50px;
-  margin-bottom: 2px;
+  margin-bottom: 17px;
   
 
 }
@@ -191,28 +191,28 @@ display: none;
 
 
 #sobre-mim {
- display: flex;
- flex-direction: row;
-
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 62px;
 }
 
 .sobre-min {
   padding: 60px 20px;
   text-align: center;
-  background: linear-gradient( 135deg, #0e0f1438, #1c1f2538);
+  background-color: #4b00e035;
   position: relative;
 }
 
 .sobre-min::after {
-        content: "";
-        height: 103%;
-        width: 103%;
-        border: 3px solid;
-        position: absolute;
-        border-image: linear-gradient(135deg, #4a00e0, #1b1f3b) 1;
-        top: -1.5%;
-        right: -2%;
-    }
+      content: "";
+      height: 103%;
+      width: 103%;
+      border: 3px solid;
+      position: absolute;
+      border-image: linear-gradient(135deg, #4a00e0, #1b1f3b) 1;
+      top: -1.5%;
+      right: -2%;
+}
 
 
 #sobre-mim h2 {
@@ -237,28 +237,60 @@ display: none;
 }
 
 
-#sobre-mim h3 {
+#tecnologias h2 {
   font-family: "Raleway", sans-serif;
   color: #1b1f3b;
-  margin-top: 40px;
-  font-size: 1.3em;
+  margin-bottom: 38px;
+  font-size: 2.3em;
   
 }
 
-#sobre-mim #tecnologias {
-  width: 90%;
-  max-width: 800px;
-  height: 60px;
-  margin: auto;
-  background: linear-gradient(to right,  #4b00e006, #1b1f3b06);
-  border-radius: 8px;
-  border: solid 1px #4b00e01f ;
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.077);
+#tecnologias {
+    width: 100%;
+    max-width: 1490px;
+    height: 100vh;
+    border-radius: 8px;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.tecnologia-usadas {
+.tecnologias-que-uso {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*
+.tecnologias {
+    width: 165px;
+    height: 195px;
+    background-color: #4b00e035;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.059);
+    margin: 20px;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.tecnologias {
+    width: 114px;
+    height: 105px;
+    background-color: #4b00e035;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.059);
+    margin: 20px;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tecnologia-usadas_image {
   padding: 5px;
-  width: 55px;
+  width: 70%;
 }
 
 
